@@ -64,7 +64,8 @@ REST API를 올바르게 설계하기 위한 규칙들에 대해 알아보자
 
 - 파일 확장자는 URI에 포함하지 않는다. <br>
 `Not RESTful : https://github.com/daneng4/img.jpg` <br>
-`RESTful : GET https://github.com/daneng4/img  HTTP/1.1 Host: restapi.example.com Accept: img/jpg <-Accept 헤더를 사용하도록 한다.`
+`RESTful : GET https://github.com/daneng4/img  HTTP/1.1 Host: restapi.example.com Accept: img/jpg` <br>
+  -> 확장자는 Accept 헤더를 사용하도록 한다.`
 
 - 행위를 포함하지 않는다. <br>
   - 회원을 조회할 때 <br>
